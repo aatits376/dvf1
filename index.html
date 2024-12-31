@@ -19,7 +19,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dharmu Bhusal | Portfolio</title>
-  
+  <link rel="manifest" href="/manifest.json">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#000">
   <meta name="description" content="dharmagatbhusal dharmubhusal 
@@ -457,6 +457,19 @@
         });
       });
     });
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
   </script>
   <script src="projects.js"></script>
   <script src="projects.json"></script>
