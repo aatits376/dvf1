@@ -47,12 +47,12 @@
   <link rel="stylesheet" href="style.css" />
   <!-- google fonts-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
-  
+
   <!-- google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body class="body">
@@ -98,6 +98,12 @@
               Projects
             </a>
           </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#contact-section" aria-label="projects menu button">
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
       <!-- navbar tabs ends -->
@@ -138,6 +144,11 @@
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
             Projects
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#contact-section" tabindex="0" aria-label="projects menu button">
+            Contact
           </a>
         </li>
       </ul>
@@ -403,6 +414,54 @@
   </main>
   <!-- main ends here -->
 
+  <section id="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <p class="contact-description">Feel free to reach out for collaborations or just a friendly chat!</p>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="c454060b-3787-49a7-9169-991c170aadbf">
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <div class="form-group">
+          <input type="text" id="yourname" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+       <!-- Custom Confirmation / Success Page -->
+     <input type="hidden" name="redirect" value="https://dharmagat.com.np"> 
+
+        <button type="submit" class="contact-btn">Send Message</button>
+
+
+<div class="social-links">
+  <a href="https://github.com/dharmub376" target="_blank" class="social-link">
+    <img src="/images/github.png" alt="GitHub" />
+  </a>
+  <a href="https://www.instagram.com/dharmub376/" target="_blank" class="social-link">
+    <img src="/images/insta.png" alt="Instagram" />
+  </a>
+  <a href="https://www.facebook.com/dharmub376" target="_blank" class="social-link">
+    <img src="/images/fb.png" alt="Facebook" />
+  </a>
+  <a href="https://www.linkedin.com/in/dharmub376/" target="_blank" class="social-link">
+    <img src="/images/ln.png" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/dharmub376" target="_blank" class="social-link">
+    <img src="/images/x.png" alt="X" />
+  </a>
+</div>
+
+      </form>
+    </div>
+  </section>
+
   <footer id="footer">
     <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
       <article aria-label="Back to top">&#8592;BACK TO TOP</article>
@@ -460,16 +519,16 @@
   </script>
   <script>
     if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(error => {
-        console.error('Service Worker registration failed:', error);
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
       });
-  });
-}
+    }
   </script>
   <script src="projects.js"></script>
   <script src="projects.json"></script>
