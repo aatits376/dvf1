@@ -1,6 +1,16 @@
 [
   {
     "id": "project-box2",
+    "faviconSrc": "./images/favicons/RPS.png",
+    "faviconAlt": "RPS website favicon",
+    "heading": "Royal Photo Studio",
+    "description": "Royal Photography: Your ultimate destination for capturing timeless memories. Experience professional photography services that bring your special moments to life with creativity and precision. From stunning portraits to event coverage, Royal Photography ensures every shot tells a story. Let us preserve your cherished memories with artistry and care.",
+    "liveLink": "https://royalphotostudio.com.np",
+    "previewSrc": "./images/projects/RPS.jpg",
+    "previewAlt": "RPS website preview image"
+    },
+  {
+    "id": "project-box2",
     "faviconSrc": "./images/favicons/BKP.png",
     "faviconAlt": "BKP website favicon",
     "heading": "Bhusal Kirana Pasal",
