@@ -1,0 +1,20 @@
+{
+  "name": "dharmu-portfolio-mern",
+  "version": "1.0.0",
+  "description": "Dharmu Bhusal Portfolio - MERN Stack",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["portfolio", "mern", "react", "mongodb", "express"],
+  "author": "Dharmu Bhusal",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
